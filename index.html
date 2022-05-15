@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            input[type="number"]::-webkit-inner-spin-button,
+            input[type="number"]::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-l from-black via-violet-700 to-black">
+    <span class="flex place-content-center text-4xl font-bold tracking-wide mt-5 text-white">Vultur Lé Culturé</span>
+    <div class="main flex flex-col xl:flex-row m-5 gap-y-4 xl:place-content-around items-center xl:items-start"> 
+        <div class="calculator flex flex-col bg-gray-800 gap-4 text-white p-4 rounded-md w-fit">
+            <span class="flex place-content-center text-xl font-bold tracking-wide">GEMSTONE CALCULATOR</span>
+            <span class="flex flex-row gap-x-4">
+                <input type="number" class="block text-center rounded border-2 border-black placeholder:text-white bg-blue-700" disabled placeholder="GEMSTONE">
+                <input type="number" class="block text-center rounded border-2 border-black placeholder:text-white bg-blue-700" disabled placeholder="QUANTITY">
+                <input type="number" class="block text-center rounded border-2 border-black placeholder:text-white bg-blue-700" disabled placeholder="PUBLIC">
+                <input type="number" class="block text-center rounded border-2 border-black placeholder:text-white bg-blue-700" disabled placeholder="COLLECTOR">
+            </span>
+            <span class="flex flex-row gap-x-4">
+                <input type="number" class="block text-center rounded border-2 border-black placeholder:text-white bg-blue-700" disabled placeholder="JADE">
+                <input type="number" name="qty" id="jade" class="block text-center rounded border-2 border-black focus:outline-none focus:border-purple-500 text-black" min="0" value="0">
+                <input type="number" name="tpPrice" id="jade" class="block text-center rounded border-2 border-black" value="0" disabled>
+                <input type="number" name="tcPrice" id="jade" class="block text-center rounded border-2 border-black" value="0" disabled>
+            </span>
+            <span class="flex flex-row gap-x-4">
+                <input type="number" class="block text-center rounded border-2 border-black placeholder:text-white bg-blue-700" disabled placeholder="CITRINE">
+                <input type="number" name="qty" id="citrine" class="block text-center rounded border-2 border-black focus:outline-none focus:border-purple-500 text-black" min="0" value="0">
+                <input type="number" name="tpPrice" id="citrine" class="block text-center rounded border-2 border-black" value="0" disabled>
+                <input type="number" name="tcPrice" id="citrine" class="block text-center rounded border-2 border-black" value="0" disabled>
+            </span>
+            <span class="flex flex-row gap-x-4">
+                <input type="number" name="" id="" class="block text-center rounded border-2 border-black placeholder:text-white bg-blue-700" disabled placeholder="AQUAMARINE">
+                <input type="number" name="qty" id="aquamarine" class="block text-center rounded border-2 border-black focus:outline-none focus:border-purple-500 text-black" min="0" value="0">
+                <input type="number" name="tpPrice" id="aquamarine" class="block text-center rounded border-2 border-black" value="0" disabled>
+                <input type="number" name="tcPrice" id="aquamarine" class="block text-center rounded border-2 border-black" value="0" disabled>
+            </span>
+            <span class="flex flex-row gap-x-4">
+                <input type="number" name="" id="" class="block text-center rounded border-2 border-black placeholder:text-white bg-blue-700" disabled placeholder="SAPPHIRE">
+                <input type="number" name="qty" id="sapphire" class="block text-center rounded border-2 border-black focus:outline-none focus:border-purple-500 text-black" min="0" value="0">
+                <input type="number" name="tpPrice" id="sapphire" class="block text-center rounded border-2 border-black" value="0" disabled>
+                <input type="number" name="tcPrice" id="sapphire" class="block text-center rounded border-2 border-black" value="0" disabled>
+            </span>
+            <span class="flex flex-row gap-x-4">
+                <input type="number" name="" id="" class="block text-center rounded border-2 border-black placeholder:text-white bg-blue-700" disabled placeholder="RUBY">
+                <input type="number" name="qty" id="ruby" class="block text-center rounded border-2 border-black focus:outline-none focus:border-purple-500 text-black" min="0" value="0">
+                <input type="number" name="tpPrice" id="ruby" class="block text-center rounded border-2 border-black" value="0" disabled>
+                <input type="number" name="tcPrice" id="ruby" class="block text-center rounded border-2 border-black" value="0" disabled>
+            </span>
+            <span class="flex flex-row gap-x-4">
+                <input type="number" name="" id="" class="block text-center rounded border-2 border-black placeholder:text-white bg-blue-700" disabled placeholder="DIAMOND">
+                <input type="number" name="qty" id="diamond" class="block text-center rounded border-2 border-black focus:outline-none focus:border-purple-500 text-black" min="0" value="0">
+                <input type="number" name="tpPrice" id="diamond" class="block text-center rounded border-2 border-black" value="0" disabled>
+                <input type="number" name="tcPrice" id="diamond" class="block text-center rounded border-2 border-black" value="0" disabled>
+            </span>
+            <span class="flex flex-row gap-x-4">
+                <input type="number" name="" id="" class="block text-center rounded border-2 border-black placeholder:text-white bg-blue-700" disabled placeholder="TANZANITE">
+                <input type="number" name="qty" id="tanzanite" class="block text-center rounded border-2 border-black focus:outline-none focus:border-purple-500 text-black" min="0" value="0">
+                <input type="number" name="tpPrice" id="tanzanite" class="block text-center rounded border-2 border-black" value="0" disabled>
+                <input type="number" name="tcPrice" id="tanzanite" class="block text-center rounded border-2 border-black" value="0" disabled>
+            </span>
+            <span class="flex flex-row gap-x-4 my-4">
+                <input type="number" name="" id="" class="block text-center rounded border-2 border-black placeholder:text-white bg-purple-600" disabled placeholder="TOTAL">
+                <input type="number" name="" id="qtyTotal" class="block text-center rounded border-2 border-black focus:outline-none focus:border-purple-500 text-white" disabled value="0">
+                <input type="number" name="" id="publicTotal" class="block text-center rounded border-2 border-black" value="0" disabled>
+                <input type="number" name="" id="collectorTotal" class="block text-center rounded border-2 border-black" value="0" disabled>
+            </span>
+            <span class="flex flex-row gap-x-4">
+                <button class="bg-green-700 hover:bg-green-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-1/2" type="button" id="btnCalc">
+                    CALCULATE
+                </button>
+                <button class="bg-red-700 hover:bg-red-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-1/2" type="button" id="btnReset">
+                    RESET
+                </button>
+            </span>
+        </div>
+        <div class="pricelist flex flex-col bg-gray-800 gap-4 text-white p-4 rounded-md w-fit">
+            <span class="flex place-content-center text-xl font-bold tracking-wide">PRICE LIST</span>
+            <span class="flex flex-row gap-x-4">
+                <input type="number" name="" id="" class="block text-center rounded border-2 border-black placeholder:text-white bg-blue-700" disabled placeholder="GEMSTONE">
+                <input type="number" name="" id="" class="block text-center rounded border-2 border-black placeholder:text-white bg-blue-700" disabled placeholder="PUBLIC">
+                <input type="number" name="" id="" class="block text-center rounded border-2 border-black placeholder:text-white bg-blue-700" disabled placeholder="COLLECTOR">
+            </span>
+            <span class="flex flex-row gap-x-4">
+                <input type="number" name="" id="" class="block text-center rounded border-2 border-black placeholder:text-white bg-blue-700" disabled placeholder="JADE">
+                <input type="number" name="pPrice" id="jade" class="block text-center rounded border-2 border-black" value="0" disabled>
+                <input type="number" name="cPrice" id="jade" class="block text-center rounded border-2 border-black" value="0" disabled>
+            </span>
+            <span class="flex flex-row gap-x-4">
+                <input type="number" name="" id="" class="block text-center rounded border-2 border-black placeholder:text-white bg-blue-700" disabled placeholder="CITRINE">
+                <input type="number" name="pPrice" id="citrine" class="block text-center rounded border-2 border-black" value="0" disabled>
+                <input type="number" name="cPrice" id="citrine" class="block text-center rounded border-2 border-black" value="0" disabled>
+            </span>
+            <span class="flex flex-row gap-x-4">
+                <input type="number" name="" id="" class="block text-center rounded border-2 border-black placeholder:text-white bg-blue-700" disabled placeholder="AQUAMARINE">
+                <input type="number" name="pPrice" id="aquamarine" class="block text-center rounded border-2 border-black" value="0" disabled>
+                <input type="number" name="cPrice" id="aquamarine" class="block text-center rounded border-2 border-black" value="0" disabled>
+            </span>
+            <span class="flex flex-row gap-x-4">
+                <input type="number" name="" id="" class="block text-center rounded border-2 border-black placeholder:text-white bg-blue-700" disabled placeholder="SAPPHIRE">
+                <input type="number" name="pPrice" id="sapphire" class="block text-center rounded border-2 border-black" value="0" disabled>
+                <input type="number" name="cPrice" id="sapphire" class="block text-center rounded border-2 border-black" value="0" disabled>
+            </span>
+            <span class="flex flex-row gap-x-4">
+                <input type="number" name="" id="" class="block text-center rounded border-2 border-black placeholder:text-white bg-blue-700" disabled placeholder="RUBY">
+                <input type="number" name="pPrice" id="ruby" class="block text-center rounded border-2 border-black" value="0" disabled>
+                <input type="number" name="cPrice" id="ruby" class="block text-center rounded border-2 border-black" value="0" disabled>
+            </span>
+            <span class="flex flex-row gap-x-4">
+                <input type="number" name="" id="" class="block text-center rounded border-2 border-black placeholder:text-white bg-blue-700" disabled placeholder="DIAMOND">
+                <input type="number" name="pPrice" id="diamond" class="block text-center rounded border-2 border-black" value="0" disabled>
+                <input type="number" name="cPrice" id="diamond" class="block text-center rounded border-2 border-black" value="0" disabled>
+            </span>
+            <span class="flex flex-row gap-x-4">
+                <input type="number" name="" id="" class="block text-center rounded border-2 border-black placeholder:text-white bg-blue-700" disabled placeholder="TANZANITE">
+                <input type="number" name="pPrice" id="tanzanite" class="price block text-center rounded border-2 border-black" value="0" disabled>
+                <input type="number" name="cPrice" id="tanzanite" class="price block text-center rounded border-2 border-black" value="0" disabled>
+            </span>
+            <span class="flex flex-row gap-x-4">
+                <button class="bg-red-700 hover:bg-red-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full" type="button" id="btnPrice">
+                    UPDATE
+                </button>
+            </span>
+        </div>
+    </div>
+    <div class="flex place-content-evenly text-center text-base xl:text-3xl text-white p-3 border-2 xl:border-4 rounded-xl items-center m-4 xl:m-8" id="statementBox"></div>
+    <script src="index.js"></script>
+</body>
+</html>
